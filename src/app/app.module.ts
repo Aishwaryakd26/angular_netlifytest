@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from './about/about.component';
    CartComponent,
    HomeComponent,
    ContactComponent,
-   AboutComponent
+   AboutComponent,
+   PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
