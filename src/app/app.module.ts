@@ -4,13 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { UserComponent } from './user/user.component';
+import { CounterComponent } from './counter/counter.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './states/counter/counter.reducer';
+import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   UserComponent,
+   CounterComponent,
+   CartComponent,
+   HomeComponent,
+   ContactComponent,
+   AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({counter:counterReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
